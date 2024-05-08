@@ -1,0 +1,1 @@
+# Instruções para instalação do python, preparação do ambiente e sobre o cursoS.
