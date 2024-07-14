@@ -1,0 +1,6 @@
+As aulas de 1 há 6 não possuem códigos, por isso não há arquivos sequenciais.
+A aula 7 é a instalação do Postman
+Aulas 13 e 14 são o Desafio (Ex_Apis.py)
+Aula 21 é sobre utilização de git e controle de versão.
+Aula 22 é sobre conectar a API e Banco de Dados na nuvem gratis. (não vou usar isso)
+Aula 23 é sobre como hospedar APIs com Render (não vou usar isso)
