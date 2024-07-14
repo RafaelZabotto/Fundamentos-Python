@@ -9,7 +9,7 @@
 
 
 from flask import Flask, jsonify, request, make_response
-from estrutura_banco_de_dado_sql_alchemy import app
+from estrutura_banco_de_dado_sql_alchemy import app, Autor # type: ignore
 import json
 import jwt 
 from datetime import datetime, timedelta
@@ -40,7 +40,7 @@ def login():
     if not auth or not auth.username or not auth.password:
         return make_response('Login inválido', 401, {'WWW-Authntucate':'Basic realm="Login Obrigatório"'})
     # Autor não foi importado, portanto o codigo não vai rodar
-    usuário = Autor.query.filter_by(nome=auth.username).first()
+    usuario = Autor.query.filter_by(nome=auth.username).first()
     if not usuario:
         return make_response('Login inválido', 401, {'WWW-Authntucate':'Basic realm="Login Obrigatório"'})
     # Se o usuario atender os requisitos, é liberado o seu acesso e gerado um token

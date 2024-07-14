@@ -1,7 +1,7 @@
 # Como não foi instalado os pacotes e db, o programa não vai rodar, aqui tem apenas o script
 
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy # type: ignore
 
 # Criar um API flask
 app = Flask(__name__)
@@ -37,5 +37,5 @@ with app.app_context():
 
     # Criar usuários administradores
     Autor(nome='rafael', email='rafael@rmail.com', senha='123456',admin=True)
-    db.session.add(autor)
+    db.session.add(autor) # type: ignore
     db.session.commit()
